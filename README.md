@@ -8,13 +8,13 @@
 
 ## 🛠 Currently building
 
-**Perry** — self-hosted multi-agent AI stack
-- Multi-container Docker stack: local LLMs (Ollama), image generation (ComfyUI), encrypted secrets vault, MCP integration
-- Custom React dashboard with a self-learning skills loop
-- Cloudflare-tunneled remote access; NordVPN + TorGuard WireGuard exits for scout traffic
-- Workers run Claude Code & Gemini CLI containerised — subscription-only, no per-token API costs
-
-> Going public soon — currently scrubbing for secrets before first push.
+**[Perry](https://github.com/Perry5216/perry-system)** — self-hosted multi-agent AI platform
+- Containerised worker pool (Claude Code + Gemini CLI) draining a shared MCP-exposed task queue
+- Event-driven self-learning framework — new domains get the learning loop automatically
+- LoRA fine-tuning pipeline + local Ollama inference, with per-domain RAG corpus
+- React + TypeScript dashboard, encrypted secrets vault, Cloudflare-tunneled remote access
+- Domain-flexible: ships with a complete novel-writing pipeline as the flagship; bring your own domain to point the same stack at anything
+- Subscription-only cost model (no per-token API charges)
 
 ---
 
