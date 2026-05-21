@@ -20,6 +20,9 @@
 
 ## 🧠 Background — picks across the breadth
 
+**Capstone**
+- [`Ol-baid`](https://github.com/Perry5216/Ol-baid) — final-year university dissertation; capstone bringing together my engine, graphics and systems work
+
 **Systems & reverse engineering**
 - [`eft-dma-radar`](https://github.com/Perry5216/eft-dma-radar) — PCIe DMA external memory reader; hardware DMA capture, memory layout discovery (C#)
 - [`csgo-dma-overlay`](https://github.com/Perry5216/csgo-dma-overlay) — HDMI passthrough overlay fed from DMA-acquired memory
@@ -29,11 +32,13 @@
 **Engines & graphics**
 - [`Merlin-Game-Engine-CPP`](https://github.com/Perry5216/Merlin-Game-Engine-CPP) — C++ game engine, final-year uni project
 - [`Spider`](https://github.com/Perry5216/Spider) — GPU programming experiment; animated spider walking around a planet (C++)
+- [`ProjectDoppelgangerV4`](https://github.com/Perry5216/ProjectDoppelgangerV4) — Unreal Engine 5 first-person shooter experiment (C++ / Blueprints)
 
 **Games & applications**
 - [`flurrE`](https://github.com/Perry5216/flurrE) — Year-one Unity platformer (Rayman / Super Meat Boy style)
 - [`Snails`](https://github.com/Perry5216/Snails) — Year-two team game project (Unity / C#)
 - [`Ticketing-System`](https://github.com/Perry5216/Ticketing-System) — Year-two C++ OOP console app
+- [`Axe-Game`](https://github.com/Perry5216/Axe-Game) — C++ game built while learning the language
 - [`Creep`](https://github.com/Perry5216/Creep) / [`The-Creeper`](https://github.com/Perry5216/The-Creeper) — recent 2D game experiments
 
 ---
