@@ -8,13 +8,11 @@
 
 ## 🛠 Currently building
 
-**[Perry](https://github.com/Perry5216/perry-system)** — self-hosted multi-agent AI platform
-- Containerised worker pool (Claude Code + Gemini CLI) draining a shared MCP-exposed task queue
-- Event-driven self-learning framework — new domains get the learning loop automatically
-- LoRA fine-tuning pipeline + local Ollama inference, with per-domain RAG corpus
-- React + TypeScript dashboard, encrypted secrets vault, Cloudflare-tunneled remote access
-- Domain-flexible: ships with a complete novel-writing pipeline as the flagship; bring your own domain to point the same stack at anything
-- Subscription-only cost model (no per-token API charges)
+**[Perry v2](https://github.com/Perry5216/perry)** — self-hosted multi-agent platform I run on my own GPUs
+- Typed monorepo (18 packages): orchestration DAG, fail-closed gates, node-aware fleet (5070 / 5090 / Spark)
+- Local deep research, VPN web egress, Cursor-style browser sidecar, evidence-based harvest → lessons
+- **v1** is still public and not overwritten: [\perry-system\](https://github.com/Perry5216/perry-system)
+- **v3** is in design — same products, one session-log kernel — [why](https://github.com/Perry5216/perry#the-version-story)
 
 ---
 
