@@ -12,13 +12,14 @@
   <img src="https://img.shields.io/badge/Quantization-IQ2_XS_(18.5k_VRAM_Experts)-76B900?style=for-the-badge" alt="IQ2_XS" />
   <img src="https://img.shields.io/badge/Cache_Hit_Rate-99.5%25_Verified-brightgreen?style=for-the-badge" alt="99.5% Hit Rate" />
   <img src="https://img.shields.io/badge/Audit_Policy-DOUBLE_BLIND_CLEAN_ROOM-blueviolet?style=for-the-badge" alt="Double Blind" />
+  <img src="https://img.shields.io/badge/Reflex_Triage-LIVE_WEB_GROUNDED-informational?style=for-the-badge&logo=duckduckgo" alt="Web Grounded" />
   <img src="https://img.shields.io/badge/Core-C%2B%2B20_%2F_MSVC_2022-00599C?style=for-the-badge&logo=c%2B%2B" alt="C++20" />
   <img src="https://img.shields.io/badge/Sandbox-Git_Worktrees-F05032?style=for-the-badge&logo=git" alt="Git Worktrees" />
 </p>
 
 ```
 [ Primary DRI & Coder: 5090 Blackwell / Spark ] <─── Tandem Loop ───> [ Independent Auditor & Reflex: 5090 Blackwell ]
-  ├── 205-303 tok/s Whole-Module Synthesis (IQ2_XS 99.5% Cache Hit)     ├── < 2.5s AST Triage & Zero-Leakage Double-Blind Audit
+  ├── 205-303 tok/s Whole-Module Synthesis (IQ2_XS 99.5% Cache Hit)     ├── < 2.5s Web-Grounded AST Triage & Zero-Leakage Double-Blind Audit
   └── 27-Skill Matt Pocock Agentic Loop (fit_max_tokens: true)           └── Fowler Smell Linter & Refactor Gate (Exit 0 + Sentinels)
 ```
 
@@ -43,6 +44,7 @@
 - **Sub-Second Reflex & High-Throughput DRI**: Local OpenAI-compatible endpoint delivering sustained **205.6–303.7 tokens/second** on Blackwell tensor cores under **IQ2_XS quantization with 18,514 resident expert slots (75.3% in GDDR7 VRAM)** and a verified **99.5% GPU cache hit rate**.
 - **Hardware Isolation & Memory Tuning**: Reduced host RAM arena from 46.8 GB to 33.0 GB, saving **~14 GB physical RAM** so the host system can run simultaneous heavy AAA gaming loads on the secondary 5070 Ti at 95% utilization with zero micro-stutter while continuous autonomous AI engineering loops run in parallel.
 - **Double-Blind Clean-Room Audit Architecture**: Enforced strict isolation between implementation and review passes: the independent auditor evaluates *only* ticket contract specifications and `git diff` with zero visibility into the author agent's internal prompt history or reasoning scratchpad, actively enforcing Fowler clean-code standards and deterministic test gates.
+- **Live Web-Grounded Failure Triage**: Just like a senior human engineer looking up authoritative documentation when encountering a compiler fault, the reflex triage loop extracts error signatures and automatically queries live technical documentation (Microsoft Learn, language specifications, Stack Overflow) via headless research tools, feeding verified ground-truth receipts directly into the 5090 Blackwell prompt to eliminate hallucinated fixes.
 - **Low-Level Native Systems**: Proven experience across physical PCIe DMA hardware capture, second-PC memory reconstruction, and C++20 game engine memory management (`ezDynamicArray`, move semantics, memory barriers).
 
 ### 2. "How do you guarantee agents don't hallucinate or pollute production repositories?"
