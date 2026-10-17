@@ -93,7 +93,7 @@ powershell -ExecutionPolicy Bypass -File ./autonomous-ai-engineering-harness/scr
 - **Git Worktree Sandboxing**: Ephemeral task-per-worktree execution prevents dirty workspace poisoning, index lock collisions, and state leakage. Atomic promotion via fast-forward merge on green gate; zero-residue rollback on failure.
 - **Autonomous Compiler Self-Healing**: Real flight recorder incident: MSVC fatal circular header dependency (`C2061`) and `ezDynamicArray` buffer reset diagnosed and patched in **2,766ms** without human intervention.
 - **Deterministic Ticket DAG**: Dependency-ordered state machine resolving tasks in strict topological order.
-- **Live Visual Dashboard**: [Interactive Telemetry Board](https://github.com/Perry5216/autonomous-ai-engineering-harness/blob/main/docs/index.html) - **114 / 114 Verified Checkpoints Passing**
+- **Live Visual Dashboard**: [Interactive Telemetry Board](https://github.com/Perry5216/autonomous-ai-engineering-harness/blob/main/docs/index.html) - **117 / 117 Verified Checkpoints Passing**
 - **Flight Recorder Incident Telemetry**: [Raw Incident JSON Dump](https://github.com/Perry5216/autonomous-ai-engineering-harness/blob/main/telemetry/incidents/incident-2026-10-17-msvc-circular-include.json)
 
 ---
@@ -118,7 +118,7 @@ powershell -ExecutionPolicy Bypass -File ./autonomous-ai-engineering-harness/scr
 
 ## Engine Architecture, Simulation & Graphics (C++20)
 
-- **[ezEngine Colony Plugin](https://github.com/Perry5216/autonomous-ai-engineering-harness)** — Complex colony simulation engine running inside ezEngine. Features 109+ automated C++20 test checkpoints across thermodynamic heat diffusion, fluid networks, 5-factor room impressiveness, hierarchical pathfinding, and storytellers.
+- **[ezEngine Colony Plugin](https://github.com/Perry5216/ezEngine/tree/dev/Code/EnginePlugins/ColonyPlugin)** — Complex colony simulation engine running inside ezEngine. Features 117+ automated C++20 test checkpoints across thermodynamic heat diffusion, fluid networks, 5-factor room impressiveness, recreation & joy tolerance dynamics, hierarchical pathfinding, and storytellers.
 - **[`Merlin-Game-Engine-CPP`](https://github.com/Perry5216/Merlin-Game-Engine-CPP)** — Full custom C++ game engine architecture built from scratch; component systems, rendering pipeline, and memory management.
 - **[`Ol-baid`](https://github.com/Perry5216/Ol-baid)** — Final-year university dissertation and capstone project integrating engine systems, custom shaders, and graphics architectures.
 - **[`Spider`](https://github.com/Perry5216/Spider)** — GPU compute and animation experiment: real-time procedural spider navigation on arbitrary 3D spherical manifolds (C++ / OpenGL).
