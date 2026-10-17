@@ -4,7 +4,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=06B6D4&background=00000000&center=false&vCenter=true&width=750&lines=Autonomous+Systems+%26+Applied+AI+Engineer;Asymmetric+Tandem%3A+Spark+Cluster+%2B+RTX+5090+Blackwell;Zero+'Green+When+Untrue'+Verification+Pipelines;Native+C%2B%2B20+Simulation+Engines+%26+Compilers;PCIe+DMA+Hardware+Memory+Introspection" alt="Typing SVG" />
 </a>
 
-📍 **London, UK** · [LinkedIn](https://www.linkedin.com/in/anthony-perry-33b7a01a0/) · [GitHub](https://github.com/Perry5216) · [Portfolio Harness](https://github.com/Perry5216/autonomous-ai-engineering-harness)
+**London, UK** · [LinkedIn](https://www.linkedin.com/in/anthony-perry-33b7a01a0/) · [GitHub](https://github.com/Perry5216) · [Portfolio Harness](https://github.com/Perry5216/autonomous-ai-engineering-harness)
 
 <p>
   <img src="https://img.shields.io/badge/Hardware-NVIDIA_RTX_5090_Blackwell_(32GB_GDDR7)-76B900?style=for-the-badge&logo=nvidia" alt="RTX 5090" />
@@ -24,7 +24,7 @@
 
 ---
 
-## 🧭 Engineering Philosophy: Empirical Rigor Over Hype
+## Engineering Philosophy: Empirical Rigor Over Hype
 
 > *"In the era of AI-accelerated software engineering, the biggest risk is unearned confidence. I don't believe in 'vibe coding' or taking model outputs on faith.*
 > 
@@ -34,7 +34,7 @@
 
 ---
 
-## 🎯 For Technical Hiring Managers & Headhunters: Preempting the Hard Questions
+## For Technical Hiring Managers & Headhunters: Preempting the Hard Questions
 
 > *"Most candidates can write prompts. Very few know what happens when the compiler throws an AST recursion error at 3 AM or how to prevent an autonomous agent from destroying a production codebase."*
 
@@ -58,9 +58,9 @@ I engineer **closed-loop deterministic harnesses**, not open-ended chat scripts.
 - **Autonomous Self-Healing**: Real flight recorder incident: MSVC fatal circular header dependency (`C2061`) and `ezDynamicArray` buffer reset diagnosed and patched in **2,766ms** without human intervention ([Flight Recorder JSON](https://github.com/Perry5216/autonomous-ai-engineering-harness/blob/main/telemetry/incidents/incident-2026-10-17-msvc-circular-include.json)).
 
 ### 4. "What roles am I primed to execute on day one?"
-- 🤖 **Applied AI Engineer (Autonomous Coding / Codex / Devin-Class Agentic Loops)**: Designing evaluation harnesses, multi-agent co-processors, self-healing compiler loops, and deterministic execution environments.
-- ⚡ **AI Systems & Inference Infrastructure Engineer**: Managing high-throughput local inference, heterogeneous cluster scheduling, GPU VRAM budgeting, and local LoRA fine-tuning pipelines.
-- 🎮 **Systems & Engine Software Engineer**: Low-level C++20 architecture, simulation graphs, hardware memory introspection, and high-performance native tooling.
+-  **Applied AI Engineer (Autonomous Coding / Codex / Devin-Class Agentic Loops)**: Designing evaluation harnesses, multi-agent co-processors, self-healing compiler loops, and deterministic execution environments.
+-  **AI Systems & Inference Infrastructure Engineer**: Managing high-throughput local inference, heterogeneous cluster scheduling, GPU VRAM budgeting, and local LoRA fine-tuning pipelines.
+-  **Systems & Engine Software Engineer**: Low-level C++20 architecture, simulation graphs, hardware memory introspection, and high-performance native tooling.
 
 ### 5. "How do I verify your work in 10 seconds?"
 Clone the harness and run the automated integrity verification suite:
@@ -71,7 +71,7 @@ powershell -ExecutionPolicy Bypass -File ./autonomous-ai-engineering-harness/scr
 
 ---
 
-## 🛡️ Production Standards: Engineering Invariants
+## Production Standards: Engineering Invariants
 
 | Conventional Agentic Setups | My Autonomous Production Harness Standard |
 |---|---|
@@ -83,9 +83,9 @@ powershell -ExecutionPolicy Bypass -File ./autonomous-ai-engineering-harness/scr
 
 ---
 
-## ⚡ Flagship Systems & Active Projects
+## Flagship Systems & Active Projects
 
-### 🚀 [Autonomous AI Engineering Harness](https://github.com/Perry5216/autonomous-ai-engineering-harness)
+### [Autonomous AI Engineering Harness](https://github.com/Perry5216/autonomous-ai-engineering-harness)
 *Production-grade autonomous engineering harness featuring asymmetric dual-model architecture, zero "green when untrue" verification, and self-healing C++20 compiler loops.*
 
 - **Asymmetric Tandem Inference**: Spark Cluster (DRI) generates complex multi-file C++20 subsystems, while a dedicated local **NVIDIA RTX 5090 Blackwell** (:8080 @ 182 tok/s) acts as the low-latency reflex triage engine.
@@ -93,12 +93,12 @@ powershell -ExecutionPolicy Bypass -File ./autonomous-ai-engineering-harness/scr
 - **Git Worktree Sandboxing**: Ephemeral task-per-worktree execution prevents dirty workspace poisoning, index lock collisions, and state leakage. Atomic promotion via fast-forward merge on green gate; zero-residue rollback on failure.
 - **Autonomous Compiler Self-Healing**: Real flight recorder incident: MSVC fatal circular header dependency (`C2061`) and `ezDynamicArray` buffer reset diagnosed and patched in **2,766ms** without human intervention.
 - **Deterministic Ticket DAG**: Dependency-ordered state machine resolving tasks in strict topological order.
-- 📊 **[Live Visual Dashboard & Telemetry Stream](https://github.com/Perry5216/autonomous-ai-engineering-harness/blob/main/docs/index.html)** · **109 / 109 Verified Checkpoints Passing**
+-  **[Live Visual Dashboard & Telemetry Stream](https://github.com/Perry5216/autonomous-ai-engineering-harness/blob/main/docs/index.html)** · **109 / 109 Verified Checkpoints Passing**
 - ✈️ **[Flight Recorder Incident Telemetry](https://github.com/Perry5216/autonomous-ai-engineering-harness/blob/main/telemetry/incidents/incident-2026-10-17-msvc-circular-include.json)**
 
 ---
 
-### 🧠 [P.E.R.R.Y. Autonomous Orchestration Ecosystem](https://github.com/Perry5216/perry)
+### [P.E.R.R.Y. Autonomous Orchestration Ecosystem](https://github.com/Perry5216/perry)
 *Self-hosted multi-agent platform and local LoRA training pipeline running on dedicated multi-GPU infrastructure.*
 
 - **[Perry v2](https://github.com/Perry5216/perry)**: Typed monorepo (18 packages) orchestrating autonomous task DAGs, fail-closed security gates, Cursor-style browser sidecars, and evidence-based knowledge harvesting across a heterogeneous GPU cluster (5090 Blackwell + Spark + 5070).
@@ -107,7 +107,7 @@ powershell -ExecutionPolicy Bypass -File ./autonomous-ai-engineering-harness/scr
 
 ---
 
-## 🔬 Low-Level Systems, Reverse Engineering & Hardware
+## Low-Level Systems, Reverse Engineering & Hardware
 
 - **[`eft-dma-radar`](https://github.com/Perry5216/eft-dma-radar)** — PCIe DMA hardware memory acquisition toolchain; physical memory layout discovery, scatter-read optimization, and external game state reconstruction (C#).
 - **[`csgo-dma-overlay`](https://github.com/Perry5216/csgo-dma-overlay)** — Second-PC HDMI passthrough overlay fed strictly from hardware DMA-acquired memory without host software footprint.
@@ -116,7 +116,7 @@ powershell -ExecutionPolicy Bypass -File ./autonomous-ai-engineering-harness/scr
 
 ---
 
-## 🎮 Engine Architecture, Simulation & Graphics (C++20)
+## Engine Architecture, Simulation & Graphics (C++20)
 
 - **[ezEngine Colony Plugin](https://github.com/Perry5216/autonomous-ai-engineering-harness)** — Complex colony simulation engine running inside ezEngine. Features 109+ automated C++20 test checkpoints across thermodynamic heat diffusion, fluid networks, 5-factor room impressiveness, hierarchical pathfinding, and storytellers.
 - **[`Merlin-Game-Engine-CPP`](https://github.com/Perry5216/Merlin-Game-Engine-CPP)** — Full custom C++ game engine architecture built from scratch; component systems, rendering pipeline, and memory management.
@@ -127,7 +127,7 @@ powershell -ExecutionPolicy Bypass -File ./autonomous-ai-engineering-harness/scr
 ---
 
 <details>
-<summary>📂 <strong>Foundational Software & Academic Game Projects (Click to expand)</strong></summary>
+<summary> <strong>Foundational Software & Academic Game Projects (Click to expand)</strong></summary>
 
 - **[`flurrE`](https://github.com/Perry5216/flurrE)** — Year-one Unity physics platformer (Rayman / Super Meat Boy mechanics).
 - **[`Snails`](https://github.com/Perry5216/Snails)** — Year-two team multiplayer game project (Unity / C#).
@@ -138,7 +138,7 @@ powershell -ExecutionPolicy Bypass -File ./autonomous-ai-engineering-harness/scr
 
 ---
 
-## 📊 Live GitHub Activity & Language Stack
+## Live GitHub Activity & Language Stack
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Perry5216&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Anthony Perry's GitHub Stats" />
