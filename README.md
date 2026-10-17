@@ -8,18 +8,18 @@
 
 <p>
   <img src="https://img.shields.io/badge/Hardware-NVIDIA_RTX_5090_Blackwell_(32GB_GDDR7)-76B900?style=for-the-badge&logo=nvidia" alt="RTX 5090" />
-  <img src="https://img.shields.io/badge/Inference-198.8_tok%2Fs_Sustained-orange?style=for-the-badge" alt="198.8 tok/s" />
-  <img src="https://img.shields.io/badge/Context-32k_VRAM_Resident_KV-blue?style=for-the-badge" alt="32k KV" />
-  <img src="https://img.shields.io/badge/Cluster-Spark_DRI_Cluster_(:8877)-brightgreen?style=for-the-badge&logo=apachespark" alt="Spark" />
+  <img src="https://img.shields.io/badge/Inference-205--303_tok%2Fs_Sustained-orange?style=for-the-badge" alt="205-303 tok/s" />
+  <img src="https://img.shields.io/badge/Quantization-IQ2_XS_(18.5k_VRAM_Experts)-76B900?style=for-the-badge" alt="IQ2_XS" />
+  <img src="https://img.shields.io/badge/Cache_Hit_Rate-99.5%25_Verified-brightgreen?style=for-the-badge" alt="99.5% Hit Rate" />
+  <img src="https://img.shields.io/badge/Audit_Policy-DOUBLE_BLIND_CLEAN_ROOM-blueviolet?style=for-the-badge" alt="Double Blind" />
   <img src="https://img.shields.io/badge/Core-C%2B%2B20_%2F_MSVC_2022-00599C?style=for-the-badge&logo=c%2B%2B" alt="C++20" />
   <img src="https://img.shields.io/badge/Sandbox-Git_Worktrees-F05032?style=for-the-badge&logo=git" alt="Git Worktrees" />
 </p>
 
 ```
-[ Primary DRI: Spark Cluster (:8877) ] <─── Tandem Loop ───> [ Reflex Engine: RTX 5090 Blackwell (:8080 @ 198.8 tok/s) ]
-  ├── C++20 Code Generation & Test Suites                       ├── < 2.5s MSVC AST Error Triage (2k Budget)
-  └── Multi-Subsystem Composition                               ├── Whole-Module Synthesis (32k Resident KV)
-                                                                └── Fowler Code Smell & ADR 0002 Linter
+[ Primary DRI & Coder: 5090 Blackwell / Spark ] <─── Tandem Loop ───> [ Independent Auditor & Reflex: 5090 Blackwell ]
+  ├── 205-303 tok/s Whole-Module Synthesis (IQ2_XS 99.5% Cache Hit)     ├── < 2.5s AST Triage & Zero-Leakage Double-Blind Audit
+  └── 27-Skill Matt Pocock Agentic Loop (fit_max_tokens: true)           └── Fowler Smell Linter & Refactor Gate (Exit 0 + Sentinels)
 ```
 
 ---
@@ -39,10 +39,10 @@
 > *"Most candidates can write prompts. Very few know what happens when the compiler throws an AST recursion error at 3 AM or how to prevent an autonomous agent from destroying a production codebase."*
 
 ### 1. "Is this an API wrapper or actual systems engineering?"
-- **Bare-Metal Compute Ownership**: Dedicated heterogeneous multi-GPU infrastructure running on bare metal (NVIDIA RTX 5090 Blackwell `sm_120` 32GB GDDR7 + multi-node Spark cluster + isolated display GPU).
-- **Sub-Second Reflex Inference**: Local OpenAI-compatible reflex endpoint delivering sustained **198.8 tokens/second** on Blackwell tensor cores, executing compiler AST diagnostics in under **2,500 ms** (empirically benchmarked: 4,096 tokens generated in 20.6s).
-- **32,768-Token VRAM-Resident KV Cache**: 131,072-token total context window with a dedicated 32k-token resident INT8 KV cache in GDDR7 VRAM, preventing host RAM thrashing during whole-module generation.
-- **Empirical Rigor in Public (Zero Bluffing)**: Engineering means measuring real failure modes. When modern reasoning models starved their output token envelope inside `<think>` blocks, I diagnosed the Strata token exhaustion bug and implemented a **Two-Tier Budget Model**: strict **2,048-token / 512-reasoning-budget** envelopes for sub-3s compiler triage, and up to **32,768 tokens** for whole translation unit synthesis.
+- **Bare-Metal Compute Ownership**: Dedicated heterogeneous multi-GPU infrastructure running on bare metal (NVIDIA RTX 5090 Blackwell `sm_120` 32GB GDDR7 + multi-node Spark cluster + completely isolated secondary RTX 5070 Ti 16GB display/gaming GPU).
+- **Sub-Second Reflex & High-Throughput DRI**: Local OpenAI-compatible endpoint delivering sustained **205.6–303.7 tokens/second** on Blackwell tensor cores under **IQ2_XS quantization with 18,514 resident expert slots (75.3% in GDDR7 VRAM)** and a verified **99.5% GPU cache hit rate**.
+- **Hardware Isolation & Memory Tuning**: Reduced host RAM arena from 46.8 GB to 33.0 GB, saving **~14 GB physical RAM** so the host system can run simultaneous heavy AAA gaming loads on the secondary 5070 Ti at 95% utilization with zero micro-stutter while continuous autonomous AI engineering loops run in parallel.
+- **Double-Blind Clean-Room Audit Architecture**: Enforced strict isolation between implementation and review passes: the independent auditor evaluates *only* ticket contract specifications and `git diff` with zero visibility into the author agent's internal prompt history or reasoning scratchpad, actively enforcing Fowler clean-code standards and deterministic test gates.
 - **Low-Level Native Systems**: Proven experience across physical PCIe DMA hardware capture, second-PC memory reconstruction, and C++20 game engine memory management (`ezDynamicArray`, move semantics, memory barriers).
 
 ### 2. "How do you guarantee agents don't hallucinate or pollute production repositories?"
@@ -77,7 +77,8 @@ powershell -ExecutionPolicy Bypass -File ./autonomous-ai-engineering-harness/scr
 |---|---|
 | **Unconstrained Chat Prompts** | **Topological Ticket DAG**: Strict dependency ordering prevents out-of-order execution |
 | **Mocks Assertions / Accepts Failures** | **Zero "Green When Untrue"**: Dual gate ($LASTEXITCODE == 0 + stdout sentinels) |
-| **Monolithic Model Overload** | **Asymmetric Tandem**: Spark Cluster (DRI) + RTX 5090 Blackwell (Fast Reflex @ 182 tok/s) |
+| **Monolithic Model Overload** | **Asymmetric Tandem & Double-Blind**: DRI Coder + 5090 Blackwell Reflex & Auditor (@ 205-303 tok/s) |
+| **Author Self-Grading** | **Double-Blind Clean-Room Audit**: Zero-leakage independent reviewer checks contract & diff only |
 | **Working Tree Pollution** | **Git Worktree Sandboxes**: Ephemeral task workspaces with zero-residue rollback |
 | **LLM Architectural Drift** | **ADR 0002 Linter**: Automated static guardrails intercept and reject God-class bloat |
 
@@ -86,9 +87,9 @@ powershell -ExecutionPolicy Bypass -File ./autonomous-ai-engineering-harness/scr
 ## Flagship Systems & Active Projects
 
 ### [Autonomous AI Engineering Harness](https://github.com/Perry5216/autonomous-ai-engineering-harness)
-*Production-grade autonomous engineering harness featuring asymmetric dual-model architecture, zero "green when untrue" verification, and self-healing C++20 compiler loops.*
+*Production-grade autonomous engineering harness featuring asymmetric dual-model architecture, zero "green when untrue" verification, double-blind clean-room code review, and self-healing C++20 compiler loops.*
 
-- **Asymmetric Tandem Inference**: Spark Cluster (DRI) generates complex multi-file C++20 subsystems, while a dedicated local **NVIDIA RTX 5090 Blackwell** (:8080 @ 198.8 tok/s) acts as the low-latency reflex triage engine.
+- **Asymmetric Tandem Inference & Double-Blind Review**: Spark Cluster / 5090 Blackwell generates code with the 27-skill DSH deck, while a dedicated local **NVIDIA RTX 5090 Blackwell** (:8080 @ 205.6–303.7 tok/s) acts as both the low-latency reflex triage engine and an independent, clean-room code auditor.
 - **Zero "Green When Untrue" Verification**: Tests are only certified passing when **both** conditions hold: binary exit code is strictly zero (`$LASTEXITCODE -eq 0`) and all required stdout sentinels are verified. Zero hallucinated or mocked test passes.
 - **Git Worktree Sandboxing**: Ephemeral task-per-worktree execution prevents dirty workspace poisoning, index lock collisions, and state leakage. Atomic promotion via fast-forward merge on green gate; zero-residue rollback on failure.
 - **Autonomous Compiler Self-Healing**: Real flight recorder incident: MSVC fatal circular header dependency (`C2061`) and `ezDynamicArray` buffer reset diagnosed and patched in **2,766ms** without human intervention.
