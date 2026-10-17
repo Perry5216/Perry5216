@@ -88,13 +88,13 @@ powershell -ExecutionPolicy Bypass -File ./autonomous-ai-engineering-harness/scr
 ### [Autonomous AI Engineering Harness](https://github.com/Perry5216/autonomous-ai-engineering-harness)
 *Production-grade autonomous engineering harness featuring asymmetric dual-model architecture, zero "green when untrue" verification, and self-healing C++20 compiler loops.*
 
-- **Asymmetric Tandem Inference**: Spark Cluster (DRI) generates complex multi-file C++20 subsystems, while a dedicated local **NVIDIA RTX 5090 Blackwell** (:8080 @ 182 tok/s) acts as the low-latency reflex triage engine.
+- **Asymmetric Tandem Inference**: Spark Cluster (DRI) generates complex multi-file C++20 subsystems, while a dedicated local **NVIDIA RTX 5090 Blackwell** (:8080 @ 198.8 tok/s) acts as the low-latency reflex triage engine.
 - **Zero "Green When Untrue" Verification**: Tests are only certified passing when **both** conditions hold: binary exit code is strictly zero (`$LASTEXITCODE -eq 0`) and all required stdout sentinels are verified. Zero hallucinated or mocked test passes.
 - **Git Worktree Sandboxing**: Ephemeral task-per-worktree execution prevents dirty workspace poisoning, index lock collisions, and state leakage. Atomic promotion via fast-forward merge on green gate; zero-residue rollback on failure.
 - **Autonomous Compiler Self-Healing**: Real flight recorder incident: MSVC fatal circular header dependency (`C2061`) and `ezDynamicArray` buffer reset diagnosed and patched in **2,766ms** without human intervention.
 - **Deterministic Ticket DAG**: Dependency-ordered state machine resolving tasks in strict topological order.
--  **[Live Visual Dashboard & Telemetry Stream](https://github.com/Perry5216/autonomous-ai-engineering-harness/blob/main/docs/index.html)** · **109 / 109 Verified Checkpoints Passing**
-- ✈️ **[Flight Recorder Incident Telemetry](https://github.com/Perry5216/autonomous-ai-engineering-harness/blob/main/telemetry/incidents/incident-2026-10-17-msvc-circular-include.json)**
+- **Live Visual Dashboard**: [Interactive Telemetry Board](https://github.com/Perry5216/autonomous-ai-engineering-harness/blob/main/docs/index.html) - **111 / 111 Verified Checkpoints Passing**
+- **Flight Recorder Incident Telemetry**: [Raw Incident JSON Dump](https://github.com/Perry5216/autonomous-ai-engineering-harness/blob/main/telemetry/incidents/incident-2026-10-17-msvc-circular-include.json)
 
 ---
 
