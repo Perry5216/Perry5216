@@ -99,6 +99,15 @@ powershell -ExecutionPolicy Bypass -File ./autonomous-ai-engineering-harness/scr
 
 ---
 
+### [Resilient Rate Limiter & Circuit Breaker](https://github.com/Perry5216/resilient-rate-limiter)
+*High-throughput sub-bucket sliding window rate limiter and three-state circuit breaker engineered with microsecond monotonic clock seams and double-blind clean-room audit verification.*
+
+- **Sub-Bucket Sliding Window (ADR 0001)**: Memory-bounded discrete bucket counters with exact sliding window replenishment and microsecond-precision `resetMs` calculation preventing retry storms.
+- **Three-State Transient Fault Isolation**: CLOSED/OPEN/HALF_OPEN state machine featuring bounded probe concurrency, fallback execution, and deterministic recovery.
+- **Double-Blind Clean-Room Audit Verified**: Full code evaluated and audited by an independent local 5090 Blackwell auditor with zero prompt leakage, scoring an **A (91/100) — APPROVED** across Fowler clean-code standards and deterministic test gates.
+
+---
+
 ### [P.E.R.R.Y. Autonomous Orchestration Ecosystem](https://github.com/Perry5216/perry)
 *Self-hosted multi-agent platform and local LoRA training pipeline running on dedicated multi-GPU infrastructure.*
 
