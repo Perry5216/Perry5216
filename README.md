@@ -22,6 +22,16 @@
 
 ---
 
+## 🧭 Engineering Philosophy: Empirical Rigor Over Hype
+
+> *"In the era of AI-accelerated software engineering, the biggest risk is unearned confidence. I don't believe in 'vibe coding' or taking model outputs on faith.*
+> 
+> *When models can generate thousands of lines in seconds, the role of the engineer shifts from typing syntax to enforcing ground truth. That is why every system I build is anchored in ruthless determinism: binary exit codes, deterministic test sentinels, isolated sandboxes, and hardware profiling.*
+> 
+> *I don't ask anyone to take my word for it—I let the compiler, the test harness, and the live telemetry speak for themselves."*
+
+---
+
 ## 🎯 For Technical Hiring Managers & Headhunters: Preempting the Hard Questions
 
 > *"Most candidates can write prompts. Very few know what happens when the compiler throws an AST recursion error at 3 AM or how to prevent an autonomous agent from destroying a production codebase."*
