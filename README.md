@@ -1,14 +1,36 @@
 # Anthony Perry
 
-> **Autonomous Systems & Applied AI Engineer** · High-Throughput Local Inference, Deterministic Orchestration & Low-Level C++ Systems.
+<a href="https://github.com/Perry5216">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=06B6D4&background=00000000&center=false&vCenter=true&width=750&lines=Autonomous+Systems+%26+Applied+AI+Engineer;Asymmetric+Tandem%3A+Spark+Cluster+%2B+RTX+5090+Blackwell;Zero+'Green+When+Untrue'+Verification+Pipelines;Native+C%2B%2B20+Simulation+Engines+%26+Compilers;PCIe+DMA+Hardware+Memory+Introspection" alt="Typing SVG" />
+</a>
 
-📍 London, UK · [LinkedIn](https://www.linkedin.com/in/anthony-perry-33b7a01a0/) · [GitHub](https://github.com/Perry5216)
+📍 **London, UK** · [LinkedIn](https://www.linkedin.com/in/anthony-perry-33b7a01a0/) · [GitHub](https://github.com/Perry5216)
+
+<p>
+  <img src="https://img.shields.io/badge/Hardware-NVIDIA_RTX_5090_Blackwell_(32GB_GDDR7)-76B900?style=for-the-badge&logo=nvidia" alt="RTX 5090" />
+  <img src="https://img.shields.io/badge/Cluster-Spark_DRI_Cluster_(:8877)-brightgreen?style=for-the-badge&logo=apachespark" alt="Spark" />
+  <img src="https://img.shields.io/badge/Core-C%2B%2B20_%2F_MSVC_2022-00599C?style=for-the-badge&logo=c%2B%2B" alt="C++20" />
+  <img src="https://img.shields.io/badge/Sandbox-Git_Worktrees-F05032?style=for-the-badge&logo=git" alt="Git Worktrees" />
+  <img src="https://img.shields.io/badge/Research-PCIe_DMA_Hardware-blueviolet?style=for-the-badge" alt="DMA" />
+</p>
 
 ```
 [ Primary DRI: Spark Cluster (:8877) ] <─── Tandem Loop ───> [ Reflex Engine: RTX 5090 Blackwell (:8080 @ 182 tok/s) ]
   ├── C++20 Code Generation & Test Suites                       ├── < 2.8s MSVC AST Error Triage
   └── Multi-Subsystem Composition                               └── Fowler Code Smell & ADR 0002 Linter
 ```
+
+---
+
+## 🛡️ Production Standards: Engineering Invariants
+
+| Conventional Agentic Setups | My Autonomous Production Harness Standard |
+|---|---|
+| **Unconstrained Chat Prompts** | **Topological Ticket DAG**: Strict dependency ordering prevents out-of-order execution |
+| **Mocks Assertions / Accepts Failures** | **Zero "Green When Untrue"**: Dual gate ($LASTEXITCODE == 0 + stdout sentinels) |
+| **Monolithic Model Overload** | **Asymmetric Tandem**: Spark Cluster (DRI) + RTX 5090 Blackwell (Fast Reflex @ 182 tok/s) |
+| **Working Tree Pollution** | **Git Worktree Sandboxes**: Ephemeral task workspaces with zero-residue rollback |
+| **LLM Architectural Drift** | **ADR 0002 Linter**: Automated static guardrails intercept and reject God-class bloat |
 
 ---
 
@@ -23,6 +45,7 @@
 - **Autonomous Compiler Self-Healing**: Real flight recorder incident: MSVC fatal circular header dependency (`C2061`) and `ezDynamicArray` buffer reset diagnosed and patched in **2,766ms** without human intervention.
 - **Deterministic Ticket DAG**: Dependency-ordered state machine resolving tasks in strict topological order.
 - 📊 **[Live Visual Dashboard & Telemetry Stream](https://github.com/Perry5216/autonomous-ai-engineering-harness/blob/main/docs/index.html)** · **109 / 109 Verified Checkpoints Passing**
+- ✈️ **[Flight Recorder Incident Telemetry](https://github.com/Perry5216/autonomous-ai-engineering-harness/blob/main/telemetry/incidents/incident-2026-10-17-msvc-circular-include.json)**
 
 ---
 
@@ -70,5 +93,8 @@
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Perry5216&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Anthony Perry's GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Perry5216&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</div>
+<div align="center" style="margin-top: 10px;">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Perry5216&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
 </div>
