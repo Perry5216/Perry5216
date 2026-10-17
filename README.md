@@ -8,16 +8,18 @@
 
 <p>
   <img src="https://img.shields.io/badge/Hardware-NVIDIA_RTX_5090_Blackwell_(32GB_GDDR7)-76B900?style=for-the-badge&logo=nvidia" alt="RTX 5090" />
+  <img src="https://img.shields.io/badge/Inference-198.8_tok%2Fs_Sustained-orange?style=for-the-badge" alt="198.8 tok/s" />
+  <img src="https://img.shields.io/badge/Context-32k_VRAM_Resident_KV-blue?style=for-the-badge" alt="32k KV" />
   <img src="https://img.shields.io/badge/Cluster-Spark_DRI_Cluster_(:8877)-brightgreen?style=for-the-badge&logo=apachespark" alt="Spark" />
   <img src="https://img.shields.io/badge/Core-C%2B%2B20_%2F_MSVC_2022-00599C?style=for-the-badge&logo=c%2B%2B" alt="C++20" />
   <img src="https://img.shields.io/badge/Sandbox-Git_Worktrees-F05032?style=for-the-badge&logo=git" alt="Git Worktrees" />
-  <img src="https://img.shields.io/badge/Research-PCIe_DMA_Hardware-blueviolet?style=for-the-badge" alt="DMA" />
 </p>
 
 ```
-[ Primary DRI: Spark Cluster (:8877) ] <─── Tandem Loop ───> [ Reflex Engine: RTX 5090 Blackwell (:8080 @ 182 tok/s) ]
-  ├── C++20 Code Generation & Test Suites                       ├── < 2.8s MSVC AST Error Triage
-  └── Multi-Subsystem Composition                               └── Fowler Code Smell & ADR 0002 Linter
+[ Primary DRI: Spark Cluster (:8877) ] <─── Tandem Loop ───> [ Reflex Engine: RTX 5090 Blackwell (:8080 @ 198.8 tok/s) ]
+  ├── C++20 Code Generation & Test Suites                       ├── < 2.5s MSVC AST Error Triage (2k Budget)
+  └── Multi-Subsystem Composition                               ├── Whole-Module Synthesis (32k Resident KV)
+                                                                └── Fowler Code Smell & ADR 0002 Linter
 ```
 
 ---
@@ -37,8 +39,10 @@
 > *"Most candidates can write prompts. Very few know what happens when the compiler throws an AST recursion error at 3 AM or how to prevent an autonomous agent from destroying a production codebase."*
 
 ### 1. "Is this an API wrapper or actual systems engineering?"
-- **Bare-Metal Compute Ownership**: I run a dedicated heterogeneous multi-GPU infrastructure locally (NVIDIA RTX 5090 Blackwell `sm_120` 32GB GDDR7 + multi-node Spark cluster + isolated display GPU).
-- **Sub-Second Reflex Inference**: Local OpenAI-compatible reflex endpoint tuned to **182.4 tokens/second**, executing compiler AST diagnostics in under **2,800 ms**.
+- **Bare-Metal Compute Ownership**: Dedicated heterogeneous multi-GPU infrastructure running on bare metal (NVIDIA RTX 5090 Blackwell `sm_120` 32GB GDDR7 + multi-node Spark cluster + isolated display GPU).
+- **Sub-Second Reflex Inference**: Local OpenAI-compatible reflex endpoint delivering sustained **198.8 tokens/second** on Blackwell tensor cores, executing compiler AST diagnostics in under **2,500 ms** (empirically benchmarked: 4,096 tokens generated in 20.6s).
+- **32,768-Token VRAM-Resident KV Cache**: 131,072-token total context window with a dedicated 32k-token resident INT8 KV cache in GDDR7 VRAM, preventing host RAM thrashing during whole-module generation.
+- **Empirical Rigor in Public (Zero Bluffing)**: Engineering means measuring real failure modes. When modern reasoning models starved their output token envelope inside `<think>` blocks, I diagnosed the Strata token exhaustion bug and implemented a **Two-Tier Budget Model**: strict **2,048-token / 512-reasoning-budget** envelopes for sub-3s compiler triage, and up to **32,768 tokens** for whole translation unit synthesis.
 - **Low-Level Native Systems**: Proven experience across physical PCIe DMA hardware capture, second-PC memory reconstruction, and C++20 game engine memory management (`ezDynamicArray`, move semantics, memory barriers).
 
 ### 2. "How do you guarantee agents don't hallucinate or pollute production repositories?"
