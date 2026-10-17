@@ -4,7 +4,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=06B6D4&background=00000000&center=false&vCenter=true&width=750&lines=Autonomous+Systems+%26+Applied+AI+Engineer;Asymmetric+Tandem%3A+Spark+Cluster+%2B+RTX+5090+Blackwell;Zero+'Green+When+Untrue'+Verification+Pipelines;Native+C%2B%2B20+Simulation+Engines+%26+Compilers;PCIe+DMA+Hardware+Memory+Introspection" alt="Typing SVG" />
 </a>
 
-📍 **London, UK** · [LinkedIn](https://www.linkedin.com/in/anthony-perry-33b7a01a0/) · [GitHub](https://github.com/Perry5216)
+📍 **London, UK** · [LinkedIn](https://www.linkedin.com/in/anthony-perry-33b7a01a0/) · [GitHub](https://github.com/Perry5216) · [Portfolio Harness](https://github.com/Perry5216/autonomous-ai-engineering-harness)
 
 <p>
   <img src="https://img.shields.io/badge/Hardware-NVIDIA_RTX_5090_Blackwell_(32GB_GDDR7)-76B900?style=for-the-badge&logo=nvidia" alt="RTX 5090" />
@@ -18,6 +18,41 @@
 [ Primary DRI: Spark Cluster (:8877) ] <─── Tandem Loop ───> [ Reflex Engine: RTX 5090 Blackwell (:8080 @ 182 tok/s) ]
   ├── C++20 Code Generation & Test Suites                       ├── < 2.8s MSVC AST Error Triage
   └── Multi-Subsystem Composition                               └── Fowler Code Smell & ADR 0002 Linter
+```
+
+---
+
+## 🎯 For Technical Hiring Managers & Headhunters: Preempting the Hard Questions
+
+> *"Most candidates can write prompts. Very few know what happens when the compiler throws an AST recursion error at 3 AM or how to prevent an autonomous agent from destroying a production codebase."*
+
+### 1. "Is this an API wrapper or actual systems engineering?"
+- **Bare-Metal Compute Ownership**: I run a dedicated heterogeneous multi-GPU infrastructure locally (NVIDIA RTX 5090 Blackwell `sm_120` 32GB GDDR7 + multi-node Spark cluster + isolated display GPU).
+- **Sub-Second Reflex Inference**: Local OpenAI-compatible reflex endpoint tuned to **182.4 tokens/second**, executing compiler AST diagnostics in under **2,800 ms**.
+- **Low-Level Native Systems**: Proven experience across physical PCIe DMA hardware capture, second-PC memory reconstruction, and C++20 game engine memory management (`ezDynamicArray`, move semantics, memory barriers).
+
+### 2. "How do you guarantee agents don't hallucinate or pollute production repositories?"
+I engineer **closed-loop deterministic harnesses**, not open-ended chat scripts. Every autonomous task is constrained by **Four Iron Invariants**:
+1. **Zero "Green When Untrue"**: A test is only marked passing if **both** the binary exit code is strictly zero (`$LASTEXITCODE -eq 0`) and all required stdout sentinel regexes match. Zero mock passes.
+2. **Git Worktree Sandboxing**: Every agent turn runs in an ephemeral Git worktree. Failed attempts are destroyed with `--force` at the filesystem and Git ref level. The main integration branch is only touched via fast-forward merges on certified green builds.
+3. **ADR 0002 Static Architectural Linters**: Automated diff analysis rejects any patch that attempts to dump subsystem algorithms directly into core engine God-classes before compilation is even scheduled.
+4. **Topological Ticket DAG**: Tasks are resolved in strict dependency order, preventing out-of-order feature execution and cyclic deadlocks.
+
+### 3. "Can your systems handle massive native enterprise repositories?"
+- **Validated Against ezEngine**: The active harness runs autonomously against `ezEngine`, a massive, production-grade C++20 multi-million-line codebase with CMake, Ninja, and MSVC toolchains.
+- **109+ Verified Checkpoints**: Autonomously writes, compiles, and verifies subsystems spanning thermodynamic heat diffusion, pressurized fluid networks, 5-factor room impressiveness, and hierarchical A* pathfinding.
+- **Autonomous Self-Healing**: Real flight recorder incident: MSVC fatal circular header dependency (`C2061`) and `ezDynamicArray` buffer reset diagnosed and patched in **2,766ms** without human intervention ([Flight Recorder JSON](https://github.com/Perry5216/autonomous-ai-engineering-harness/blob/main/telemetry/incidents/incident-2026-10-17-msvc-circular-include.json)).
+
+### 4. "What roles am I primed to execute on day one?"
+- 🤖 **Applied AI Engineer (Autonomous Coding / Codex / Devin-Class Agentic Loops)**: Designing evaluation harnesses, multi-agent co-processors, self-healing compiler loops, and deterministic execution environments.
+- ⚡ **AI Systems & Inference Infrastructure Engineer**: Managing high-throughput local inference, heterogeneous cluster scheduling, GPU VRAM budgeting, and local LoRA fine-tuning pipelines.
+- 🎮 **Systems & Engine Software Engineer**: Low-level C++20 architecture, simulation graphs, hardware memory introspection, and high-performance native tooling.
+
+### 5. "How do I verify your work in 10 seconds?"
+Clone the harness and run the automated integrity verification suite:
+```powershell
+git clone https://github.com/Perry5216/autonomous-ai-engineering-harness
+powershell -ExecutionPolicy Bypass -File ./autonomous-ai-engineering-harness/scripts/verify-harness.ps1
 ```
 
 ---
